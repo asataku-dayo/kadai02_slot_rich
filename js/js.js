@@ -105,7 +105,7 @@ function picture(num, place) {
 
   //  ２回目、３つ画像がそろったとき
   if (hit_count == 2 && num1 == num2 && num1 == num3) {
-    jQuery(".hit2-modal").animate({ left: "+=1000px" }, 3000);
+    jQuery(".hit2-modal").animate({ left: "+=1000px" }, 5000);
     jQuery(".hit2-modal").fadeOut(100);
   }
 
