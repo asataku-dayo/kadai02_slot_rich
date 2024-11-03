@@ -176,4 +176,10 @@ body {
   .hit-modal p {
     padding-top: 100px;
   }
+}
+
+.hit2-modal {
+  position: absolute;
+  top: 20%;
+  left: -100%;
 }/*# sourceMappingURL=style.css.map */

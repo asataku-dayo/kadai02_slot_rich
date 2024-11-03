@@ -31,24 +31,30 @@ body {
 
 .top-courses {
   text-align: center;
-  border: 1px solid black;
+  border: 2px solid black;
   width: 60%;
   margin: 0 auto;
   padding-top: 5px;
+  background-color: rgb(231, 217, 217);
   @include mq(tab) {
     width: 25%;
   }
 
   .course-a {
     text-decoration: none;
-    .top-corse {
-      .course-imgs {
-        border-bottom: 1px solid black;
-      }
 
-      .course-text {
-        padding-top: 10px;
-      }
+    .course-imgs {
+      padding-bottom: 5px;
+      border-bottom: 1px solid black;
+    }
+
+    .course-text {
+      padding-top: 10px;
+      color: black;
     }
   }
+}
+
+.top-courses:hover {
+  border: 5px solid black;
 }

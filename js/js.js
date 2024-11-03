@@ -8,10 +8,11 @@ let timeRunning = false;
 let timer;
 let timer2;
 let timer3;
-let count = 0;
+let click_count = 0;
 let num1 = 10;
 let num2 = 20;
 let num3 = 30;
+let hit_count = 0;
 
 // スロット実行
 jQuery(".start").on("click", function () {
@@ -43,10 +44,10 @@ jQuery(".btn1").on("click", function () {
   num1 = Math.floor(Math.random() * 7);
   let place = "one-two";
   picture(num1, place);
-  count += 1;
-  if (count == 3) {
+  click_count += 1;
+  if (click_count == 3) {
     timeRunning = false;
-    count = 0;
+    click_count = 0;
   }
 });
 
@@ -55,10 +56,10 @@ jQuery(".btn2").on("click", function () {
   num2 = Math.floor(Math.random() * 7);
   let place = "one-three";
   picture(num2, place);
-  count += 1;
-  if (count == 3) {
+  click_count += 1;
+  if (click_count == 3) {
     timeRunning = false;
-    count = 0;
+    click_count = 0;
   }
 });
 
@@ -68,10 +69,10 @@ jQuery(".btn3").on("click", function () {
   let place = "one-four";
   picture(num3, place);
 
-  count += 1;
-  if (count == 3) {
+  click_count += 1;
+  if (click_count == 3) {
     timeRunning = false;
-    count = 0;
+    click_count = 0;
   }
 });
 
@@ -93,11 +94,29 @@ function picture(num, place) {
     document.getElementById(place).src = "img/slot7.png";
   }
 
-  //  ３つ画像がそろったとき
   if (num1 == num2 && num1 == num3) {
+    hit_count += 1;
+  }
+  console.log(hit_count);
+  //  １回目、３つ画像がそろったとき
+  if (hit_count == 1 && num1 == num2 && num1 == num3) {
     jQuery(".hit-modal").fadeIn(4000);
   }
+
+  //  ２回目、３つ画像がそろったとき
+  if (hit_count == 2 && num1 == num2 && num1 == num3) {
+    jQuery(".hit2-modal").animate({ left: "+=1000px" }, 3000);
+    jQuery(".hit2-modal").fadeOut(100);
+  }
+
+  //  ３回目、３つ画像がそろったとき
+  if (hit_count == 3 && num1 == num2 && num1 == num3) {
+    jQuery(".hit-modal").fadeIn(4000);
+    hit_count = 0;
+  }
 }
+
+// あたりモーダル閉じる
 jQuery(".hit-btn").on("click", function () {
   num1 = 10;
   num2 = 20;

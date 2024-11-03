@@ -174,7 +174,7 @@ body {
   }
 }
 
-//あたりモーダル
+//あたりモーダル3
 .hit-modal {
   display: none;
   text-align: center;
@@ -192,4 +192,12 @@ body {
       padding-top: 100px;
     }
   }
+}
+
+// あたりモーダル２
+.hit2-modal {
+  position: absolute;
+  // visibility: hidden;
+  top: 20%;
+  left: -100%;
 }

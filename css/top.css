@@ -14,10 +14,11 @@ body .top-title .title {
 
 .top-courses {
   text-align: center;
-  border: 1px solid black;
+  border: 2px solid black;
   width: 60%;
   margin: 0 auto;
   padding-top: 5px;
+  background-color: rgb(231, 217, 217);
 }
 @media screen and (min-width: 768px) {
   .top-courses {
@@ -27,9 +28,15 @@ body .top-title .title {
 .top-courses .course-a {
   text-decoration: none;
 }
-.course-imgs {
+.top-courses .course-a .course-imgs {
+  padding-bottom: 5px;
   border-bottom: 1px solid black;
 }
-.course-text {
+.top-courses .course-a .course-text {
   padding-top: 10px;
-} /*# sourceMappingURL=top.css.map */
+  color: black;
+}
+
+.top-courses:hover {
+  border: 5px solid black;
+}/*# sourceMappingURL=top.css.map */
