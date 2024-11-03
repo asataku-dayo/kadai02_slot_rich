@@ -1,0 +1,179 @@
+body {
+  background-color: antiquewhite;
+}
+
+.header {
+  height: 80px;
+  width: 80%;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .header {
+    height: 100px;
+  }
+}
+.header-title {
+  text-align: center;
+  padding-top: 25px;
+  font-weight: bold;
+  color: brown;
+  font-size: 25px;
+  text-shadow: 3px 3px black;
+}
+@media screen and (min-width: 768px) {
+  .header-title {
+    font-size: 40px;
+  }
+}
+
+.slots {
+  width: 90%;
+  height: 700px;
+  overflow: hidden;
+  scrollbar-width: none;
+  margin: auto;
+  border: solid 1px #333;
+  background-color: aliceblue;
+}
+@media screen and (max-width: 767px) {
+  .slots {
+    height: 300px;
+  }
+}
+.slots .slot-frame {
+  height: 700px;
+  position: relative;
+  overflow: hidden;
+  scrollbar-width: none;
+  overflow-y: auto;
+  border: solid 1px #333;
+}
+@media screen and (min-width: 768px) {
+  .slots .slot-frame {
+    height: 700px;
+  }
+}
+.slots .slot-frame .slot-all {
+  width: 31%;
+  position: absolute;
+}
+.slots .slot-frame .slot-all .slot-one {
+  height: 100px;
+}
+@media screen and (min-width: 768px) {
+  .slots .slot-frame .slot-all .slot-one {
+    height: 270px;
+  }
+}
+.slots .slot-frame .slot-all .slot-one img {
+  display: block;
+  margin: auto;
+  height: 100px;
+}
+@media screen and (min-width: 768px) {
+  .slots .slot-frame .slot-all .slot-one img {
+    height: 270px;
+  }
+}
+.slots .slot-frame .slot-all:nth-child(1) {
+  left: 0;
+}
+.slots .slot-frame .slot-all:nth-child(2) {
+  left: 35%;
+}
+.slots .slot-frame .slot-all:nth-child(3) {
+  right: 0;
+}
+
+.stop .btn {
+  text-align: center;
+  padding: 15px;
+  position: relative;
+}
+.stop .btn .stop-btn {
+  padding: 35px;
+  border-radius: 50%;
+  background-color: red;
+  box-shadow: 0 8px 4px;
+}
+@media screen and (max-width: 767px) {
+  .stop .btn .stop-btn {
+    padding: 20px;
+  }
+}
+.stop .btn .stop-btn:active {
+  background-color: rgb(216, 145, 145);
+  box-shadow: 0 4px 2px;
+}
+.stop .btn .stop-btn:nth-child(1) {
+  margin-right: 25%;
+}
+.stop .btn .stop-btn:nth-child(3) {
+  margin-left: 25%;
+}
+
+.start {
+  padding: 20px;
+  text-align: right;
+  width: 80%;
+  margin: auto;
+}
+.start-btn {
+  padding: 20px;
+  border-radius: 50%;
+  background-color: rgb(16, 129, 129);
+  box-shadow: 0 8px 4px;
+}
+@media screen and (min-width: 768px) {
+  .start-btn {
+    padding: 40px;
+  }
+}
+.start-btn:active {
+  margin-top: 8px;
+  background-color: aqua;
+  box-shadow: 0px -5px;
+  transform: translateY(20px);
+  transition: 0.1s;
+}
+
+.first-modal {
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(182, 172, 172);
+  top: 0;
+}
+.first-modal p {
+  padding-top: 250px;
+  padding-bottom: 30px;
+  color: white;
+  font-size: 20px;
+}
+@media screen and (min-width: 768px) {
+  .first-modal p {
+    font-size: 40px;
+    padding-top: 350px;
+  }
+}
+
+.hit-modal {
+  display: none;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(143, 140, 140);
+  top: 0;
+}
+.hit-modal p {
+  padding-top: 250px;
+  padding-bottom: 30px;
+  font-size: 20px;
+}
+@media screen and (max-width: 767px) {
+  .hit-modal p {
+    padding-top: 100px;
+  }
+}/*# sourceMappingURL=style.css.map */
