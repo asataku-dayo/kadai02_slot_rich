@@ -1,0 +1,35 @@
+body {
+  background-color: bisque;
+}
+body .top-title {
+  text-align: center;
+  padding: 20px;
+}
+body .top-title .title {
+  font-size: 30px;
+  font-weight: bold;
+  text-shadow: 2px 2px black;
+  color: rgb(221, 53, 53);
+}
+
+.top-courses {
+  text-align: center;
+  border: 1px solid black;
+  width: 60%;
+  margin: 0 auto;
+  padding-top: 5px;
+}
+@media screen and (min-width: 768px) {
+  .top-courses {
+    width: 25%;
+  }
+}
+.top-courses .course-a {
+  text-decoration: none;
+}
+.course-imgs {
+  border-bottom: 1px solid black;
+}
+.course-text {
+  padding-top: 10px;
+} /*# sourceMappingURL=top.css.map */

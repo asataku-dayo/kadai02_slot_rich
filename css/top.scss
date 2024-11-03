@@ -1,0 +1,54 @@
+// マップ型変数breakpointsを定義
+$breakpoints: (
+  // キー：値
+  "sp": "screen and (max-width: 767px)",
+  // スマホ用
+  "tab": "screen and (min-width: 768px)" // タブレット・PC用
+) !default;
+
+// メディアクエリ用のmixinを定義。デフォ値はmd
+@mixin mq($breakpoint: sp) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+body {
+  background-color: bisque;
+
+  .top-title {
+    text-align: center;
+    padding: 20px;
+
+    .title {
+      font-size: 30px;
+      font-weight: bold;
+      text-shadow: 2px 2px black;
+      color: rgb(221, 53, 53);
+    }
+  }
+}
+
+.top-courses {
+  text-align: center;
+  border: 1px solid black;
+  width: 60%;
+  margin: 0 auto;
+  padding-top: 5px;
+  @include mq(tab) {
+    width: 25%;
+  }
+
+  .course-a {
+    text-decoration: none;
+    .top-corse {
+      .course-imgs {
+        border-bottom: 1px solid black;
+      }
+
+      .course-text {
+        padding-top: 10px;
+      }
+    }
+  }
+}

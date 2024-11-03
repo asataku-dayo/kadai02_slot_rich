@@ -32,7 +32,7 @@ body {
     font-weight: bold;
     color: brown;
     font-size: 25px;
-    text-shadow: 3px 3px black;
+    text-shadow: 2px 2px black;
 
     @include mq(tab) {
       font-size: 40px;
