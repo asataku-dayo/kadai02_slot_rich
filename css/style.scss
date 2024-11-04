@@ -74,6 +74,24 @@ body {
           height: 270px;
         }
 
+        #one-two {
+          transform: scale(0);
+          transform: rotate(-360deg);
+          transition: transform 2s;
+        }
+
+        #one-three {
+          transform: scale(0);
+          transform: rotate(-360deg);
+          transition: transform 2s;
+        }
+
+        #one-four {
+          transform: scale(0);
+          transform: rotate(-360deg);
+          transition: transform 2s;
+        }
+
         img {
           display: block;
           margin: auto;
