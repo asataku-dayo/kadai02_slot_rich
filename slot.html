@@ -21,7 +21,7 @@
             <img src="img/slot1.png" alt="" class="slot-img" />
           </li>
           <li class="slot-one">
-            <img src="img/slot2.png" id="one-two" alt="" />
+            <img src="img/slot2.png" id="one-two" alt="" class="slot-img" />
           </li>
           <li class="slot-one">
             <img src="img/slot3.png" alt="" class="slot-img" />
@@ -118,14 +118,16 @@
     <!-- ストップボタン -->
     <div class="stop">
       <div class="btn">
-        <button class="stop-btn btn1"></button>
-        <button class="stop-btn btn2"></button>
-        <button class="stop-btn btn3"></button>
+        <button class="stop-btn btn1" onclick="audio1()"></button>
+        <button class="stop-btn btn2" onclick="audio1()"></button>
+        <button class="stop-btn btn3" onclick="audio1()"></button>
+        <audio id="stop-audio"><source src="./img/stop.mp3" /></audio>
       </div>
     </div>
     <!-- スタートボタン -->
     <div class="start">
-      <button class="start-btn"></button>
+      <button class="start-btn" onclick="audio()"></button>
+      <audio id="start-audio"><source src="./img/start.mp3" /></audio>
     </div>
 
     <!-- はじめのモーダル -->
