@@ -119,12 +119,11 @@ function picture(num, place) {
 
   //  ２回目、３つ画像がそろったとき
   if (hit_count == 2 && num1 == num2 && num1 == num3) {
-    let number = Math.floor(Math.random() * 3);
-    if (number == 0) {
+    if (num1 == 0 || num1 == 1 || num1 == 2) {
       jQuery(".hit-img").attr("src", "img/hit2.png");
-    } else if (number == 1) {
+    } else if (num1 == 3 || num1 == 5) {
       jQuery(".hit-img").attr("src", "img/hit2-2.png");
-    } else if (number == 2) {
+    } else if (num1 == 4 || num1 == 6) {
       jQuery(".hit-img").attr("src", "img/hit2-3.png");
     }
     jQuery(".hit2-modal").animate({ left: "+=1000px" }, 5000);
@@ -147,3 +146,15 @@ jQuery(".hit-btn").on("click", function () {
   num3 = 30;
   jQuery(".hit-modal").fadeOut(3000);
 });
+
+// サウンドstart
+function audio() {
+  document.getElementById("start-audio").currentTime = 0; //連続クリックに対応
+  document.getElementById("start-audio").play(); //クリックしたら音を再生
+}
+
+//サウンドstop
+function audio1() {
+  document.getElementById("stop-audio").currentTime = 0; //連続クリックに対応
+  document.getElementById("stop-audio").play(); //クリックしたら音を再生
+}
