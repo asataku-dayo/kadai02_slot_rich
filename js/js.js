@@ -119,6 +119,14 @@ function picture(num, place) {
 
   //  ２回目、３つ画像がそろったとき
   if (hit_count == 2 && num1 == num2 && num1 == num3) {
+    let number = Math.floor(Math.random() * 3);
+    if (number == 0) {
+      jQuery(".hit-img").attr("src", "img/hit2.png");
+    } else if (number == 1) {
+      jQuery(".hit-img").attr("src", "img/hit2-2.png");
+    } else if (number == 2) {
+      jQuery(".hit-img").attr("src", "img/hit2-3.png");
+    }
     jQuery(".hit2-modal").animate({ left: "+=1000px" }, 5000);
     jQuery(".hit2-modal").fadeOut(100);
     jQuery(".hit2-modal").animate({ left: "-=1000px" }, 5000);
