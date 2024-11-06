@@ -197,4 +197,25 @@ body {
   position: absolute;
   top: 20%;
   left: -120%;
+}
+
+.hits {
+  display: flex;
+  font-size: 1.5rem;
+  padding-left: 30px;
+  padding-bottom: 30px;
+}
+
+.hit1,
+.hit2,
+.hit3 {
+  display: none;
+}
+
+.return {
+  width: 80%;
+  margin: auto;
+}
+.return .return1 {
+  margin-top: 10px;
 }/*# sourceMappingURL=style.css.map */

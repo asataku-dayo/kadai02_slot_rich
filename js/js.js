@@ -109,12 +109,14 @@ function picture(num, place) {
   console.log(hit_count);
   //  １回目、３つ画像がそろったとき
   if (hit_count == 1 && num1 == num2 && num1 == num3) {
+    hit1audio.play();
     document.getElementById("one-two").style.transform =
       "rotate(" + 0 + "deg)  scale(1.2)";
     document.getElementById("one-three").style.transform =
       "rotate(" + 0 + "deg)  scale(1.2)";
     document.getElementById("one-four").style.transform =
       "rotate(" + 0 + "deg)  scale(1.2)";
+    jQuery(".hit1").fadeIn(300);
   }
 
   //  ２回目、３つ画像がそろったとき
@@ -130,12 +132,18 @@ function picture(num, place) {
     jQuery(".hit2-modal").fadeOut(100);
     jQuery(".hit2-modal").animate({ left: "-=1000px" }, 5000);
     jQuery(".hit2-modal").fadeIn(100);
+    hit2audio.play();
+    jQuery(".hit2").fadeIn(300);
   }
 
   //  ３回目、３つ画像がそろったとき
   if (hit_count == 3 && num1 == num2 && num1 == num3) {
     jQuery(".hit-modal").fadeIn(4000);
     hit_count = 0;
+    jQuery(".hit3").fadeIn(300);
+    jQuery(".hit1").fadeOut(5000);
+    jQuery(".hit2").fadeOut(5000);
+    jQuery(".hit3").fadeOut(5000);
   }
 }
 
