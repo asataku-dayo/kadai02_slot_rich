@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  font-size: 22px;
+}
+
+header {
+  background-color: aliceblue;
+  border-bottom: 1px solid #ccc;
+  /* solidは、ボーダースタイル（直線）のこと。ほかにもdotted(点線）dashed(破線）double（二重線）などがある */
+  text-align: center;
+}
+
+main {
+  background-color: cyan;
+  border-bottom: 1px double #ccc;
+  text-align: center;
+}
+footer {
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+}
+p {
+  text-align: center;
+  border-bottom: 1px solid #fff;
+  height: 200px;
+}
+ul {
+  padding: 0;
+  border-top: 1px solid #000;
+  display: table; /* テーブル宣言 */
+  table-layout: fixed; /* 列幅固定 */
+  width: 100%;
+}
+li {
+  list-style-type: none;
+  border: 1px solid #666;
+  background-color: #fff;
+  display: table-cell;
+  cursor: pointer;
+}
+li:hover {
+  background: mediumslateblue;
+  color: #fff;
+}
+
+#tl-content {
+  display: none;
+}

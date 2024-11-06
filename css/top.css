@@ -10,6 +10,7 @@ body .top-title .title {
   font-weight: bold;
   text-shadow: 2px 2px black;
   color: rgb(221, 53, 53);
+  margin-bottom: 10px;
 }
 
 .top-courses {
@@ -38,5 +39,34 @@ body .top-title .title {
 }
 
 .top-courses:hover {
+  border: 5px solid black;
+}
+
+.top-courses2 {
+  text-align: center;
+  border: 2px solid black;
+  width: 60%;
+  margin: 30px auto;
+  padding-top: 5px;
+  background-color: rgb(231, 217, 217);
+}
+@media screen and (min-width: 768px) {
+  .top-courses2 {
+    width: 25%;
+  }
+}
+.top-courses2 .course-a {
+  text-decoration: none;
+}
+.top-courses2 .course-a .course-imgs {
+  padding-bottom: 5px;
+  border-bottom: 1px solid black;
+}
+.top-courses2 .course-a .course-text {
+  padding-top: 10px;
+  color: black;
+}
+
+.top-courses2:hover {
   border: 5px solid black;
 }/*# sourceMappingURL=top.css.map */
